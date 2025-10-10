@@ -1,0 +1,206 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+window#waybar {
+    background-color: transparent;
+    border-bottom: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+window#waybar.hidden {
+    opacity: 0.5;
+}
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: transparent;
+}
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0px;
+}
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+#pulseaudio:hover {
+    background-color: #a37800;
+}
+.modules-left {
+    padding:7px;
+    margin:10px 0px 5px 10px;
+    border-radius:40px;
+    border: 2px solid #E29C6F;
+    background: transparent;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+.modules-center {
+    padding:7px;
+    margin:10px 0px 5px 0px;
+    border-radius:40px;
+    border: 2px solid #E29C6F;
+    background: transparent;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+.modules-right {
+    padding:7px;
+    margin: 10px 10px 5px 0px;
+    border-radius:40px;
+    border: 2px solid #E29C6F;
+    background: transparent;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+tooltip {
+    background:@background;
+    color: @color7;
+}
+#workspaces {
+    padding: 0px 5px;
+}
+#workspaces button {
+    all:unset;
+    padding: 0px 5px;
+    color: alpha(@color9,.4);
+    transition: all .2s ease;
+}
+#workspaces button:hover {
+    color:rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.active {
+    color: @color9;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#workspaces button.empty {
+    color: @color9;
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+#workspaces button.empty:hover {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: @color9;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+    border: none;
+}
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#power-profiles-daemon,
+#mpd {
+    padding: 0 10px;
+    color: #ffffff;
+}
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0px;
+}
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0px;
+}
+#clock {
+    background-color: transparent;
+}
+#battery {
+    background-color: transparent;
+    color: #ffffff;
+}
+#battery.charging, #battery.plugged {
+    color: #ffffff;
+    background-color: transparent;
+}
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#power-profiles-daemon {
+    padding-right: 15px;
+    border-radius:10px;
+}
+#power-profiles-daemon.performance {
+    background-color: #DC143C;
+    color: #ffffff;
+}
+#power-profiles-daemon.balanced {
+    background-color: transparent;
+    color: #ffffff;
+}
+#power-profiles-daemon.power-saver {
+    background-color: #6495ED;
+    color: #ffffff;
+}
+#cpu {
+    background-color: transparent;
+    color: #ffffff;
+}
+#memory {
+    background-color: transparent;
+}
+#network {
+    background-color: transparent;
+}
+#network.disconnected {
+    background-color: #f53c3c;
+}
+#pulseaudio {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius:10px;
+}
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+#temperature {
+    background-color: transparent;
+}
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+#tray {
+    background-color: transparent;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}

@@ -1,0 +1,3 @@
+2025-10-08T09:55:00 event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+2025-10-08T10:32:39 update: added /Xmen Origins.mp4
+2025-10-08T10:56:50 player: played "Xmen Origins.mp4"
