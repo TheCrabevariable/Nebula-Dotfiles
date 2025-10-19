@@ -36,7 +36,7 @@ button:hover {
     margin:10px 0px 5px 10px;
     border-radius:40px;
     border: 2px solid #E29C6F;
-    background: transparent;
+    background: #282828;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 .modules-center {
@@ -44,7 +44,7 @@ button:hover {
     margin:10px 0px 5px 0px;
     border-radius:40px;
     border: 2px solid #E29C6F;
-    background: transparent;
+    background: #282828;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 .modules-right {
@@ -52,7 +52,7 @@ button:hover {
     margin: 10px 10px 5px 0px;
     border-radius:40px;
     border: 2px solid #E29C6F;
-    background: transparent;
+    background: #282828;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 tooltip {
