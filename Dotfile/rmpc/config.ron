@@ -4,7 +4,7 @@
 (
     address: "127.0.0.1:6600",
     password: None,
-    theme: None,
+    theme: Some("cat"),
     cache_dir: None,
     on_song_change: None,
     volume_step: 5,
@@ -21,7 +21,7 @@
     directories_sort: SortFormat(group_by_type: true, reverse: false),
     album_art: (
         method: Auto,
-        max_size_px: (width: 1200, height: 1200),
+        max_size_px: (width: 474, height: 474),
         disabled_protocols: ["http://", "https://"],
         vertical_align: Center,
         horizontal_align: Center,
