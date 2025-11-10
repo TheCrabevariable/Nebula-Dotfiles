@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=20
-SAVEHIST=20
+HISTSIZE=50
+SAVEHIST=50
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/catboy/.zshrc'
@@ -21,3 +21,4 @@ alias install="sudo pacman -S"
 alias update="sudo pacman -Syu"
 alias remove="sudo pacman -Rns"
 alias clean="sudo pacman -Scc"
+alias zeta="ollama run llama3.2:1b"
