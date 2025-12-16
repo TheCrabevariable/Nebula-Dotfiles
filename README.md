@@ -1,6 +1,7 @@
 # Nebula-Dotfiles
 Dotfiles of my laptop.
-<img width="1365" height="768" alt="image" src="https://github.com/user-attachments/assets/dcfb4445-2be9-436f-8aff-3cfe651c4d70" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6ba3c55b-67de-43d0-9bec-d87a5a17d2aa" />
+
 
 
 This repository is an Arch one, using pacman and flatpak in hyprland. 
