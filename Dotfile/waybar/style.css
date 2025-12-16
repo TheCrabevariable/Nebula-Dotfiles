@@ -4,20 +4,11 @@
     font-size: 12px;
 }
 window#waybar {
-    background-color: transparent;
-    border-bottom: transparent;
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
-}
-window#waybar.hidden {
-    opacity: 0.5;
-}
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: transparent;
+    background-color: #282828;
+    color: #282828;
+    border:2px solid #E29C6F;
+    border-radius: 2px;
+    min-height: 0;
 }
 button {
     box-shadow: inset 0 -3px transparent;
@@ -30,30 +21,6 @@ button:hover {
 }
 #pulseaudio:hover {
     background-color: #a37800;
-}
-.modules-left {
-    padding:7px;
-    margin:10px 0px 5px 10px;
-    border-radius:40px;
-    border: 2px solid #E29C6F;
-    background: #282828;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-.modules-center {
-    padding:7px;
-    margin:10px 0px 5px 0px;
-    border-radius:40px;
-    border: 2px solid #E29C6F;
-    background: #282828;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-.modules-right {
-    padding:7px;
-    margin: 10px 10px 5px 0px;
-    border-radius:40px;
-    border: 2px solid #E29C6F;
-    background: #282828;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 tooltip {
     background:@background;
@@ -69,15 +36,13 @@ tooltip {
     transition: all .2s ease;
 }
 #workspaces button:hover {
-    color:rgba(0,0,0,0);
+    color: @color9;
     border: none;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
 }
 #workspaces button.active {
     color: @color9;
     border: none;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
 #workspaces button.empty {
     color: @color9;
@@ -85,7 +50,7 @@ tooltip {
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
 }
 #workspaces button.empty:hover {
-    color: rgba(0,0,0,0);
+    color: @color9;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
@@ -114,7 +79,9 @@ tooltip {
     padding: 0 10px;
     color: #ffffff;
 }
-#window,
+#window {
+    color: #ffffff;
+}
 #workspaces {
     margin: 0 4px;
 }
@@ -151,8 +118,8 @@ tooltip {
     animation-direction: alternate;
 }
 #power-profiles-daemon {
-    padding-right: 15px;
-    border-radius:10px;
+    margin: 2px;
+    border-radius: 2px;
 }
 #power-profiles-daemon.performance {
     background-color: #DC143C;
