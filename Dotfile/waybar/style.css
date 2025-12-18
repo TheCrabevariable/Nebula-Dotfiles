@@ -169,3 +169,9 @@ tooltip {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
+#custom-separator_dot {
+    color: #ffffff;
+}
+#custom-separator {
+    color: #ffffff;
+}
